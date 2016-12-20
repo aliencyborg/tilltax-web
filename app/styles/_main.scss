@@ -1,0 +1,40 @@
+body {
+  background-color: $background-color;
+  padding: 15px;
+
+  .row > .input-field {
+    margin: 1.5rem 0;
+  }
+}
+
+.liquid-container {
+  padding: 1rem;
+  transform: none;
+  -webkit-transform: none;
+}
+
+nav {
+  background-color: $navbar-color;
+
+  li.restricted {
+    background-color: $restricted-color;
+
+    &.active {
+      background-color: $restricted-active-color;
+    }
+  }
+}
+
+footer.page-footer {
+  .footer-copyright {
+    background-color: $navbar-color;
+  }
+}
+
+.btn {
+  color: $off-black;
+}
+
+div.title {
+  width: 100%;
+}

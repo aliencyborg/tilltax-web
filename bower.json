@@ -1,0 +1,10 @@
+{
+  "name": "biscuitman",
+  "dependencies": {
+    "ember": "~2.10.0",
+    "ember-cli-shims": "~0.1.1",
+    "font-awesome": "~4.7.0",
+    "materialize": "0.97.8",
+    "slick-carousel": "^1.6.0"
+  }
+}
