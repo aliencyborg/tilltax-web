@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   let ENV = {
-    modulePrefix: 'biscuitman',
+    modulePrefix: 'tilltax',
     environment,
     rootURL: '/',
     locationType: 'auto',
@@ -58,7 +58,7 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-    ENV.DS.host = 'http://api.biscuitmancompost.com';
+    ENV.DS.host = 'https://api.tilltax.com';
   }
 
   return ENV;

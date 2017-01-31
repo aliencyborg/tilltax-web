@@ -4,12 +4,6 @@ const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 module.exports = function(defaults) {
   let app = new EmberApp(defaults, {
     // Add options here
-    dotEnv: {
-      clientAllowedKeys: ['API_HOST'],
-      path: {
-        production: '.env.production'
-      }
-    },
     sassOptions: {
       includePaths: [
         'bower_components/materialize/sass'

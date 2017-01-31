@@ -1,5 +1,5 @@
 import DS from 'ember-data';
-import ENV from 'biscuitman/config/environment';
+import ENV from 'tilltax/config/environment';
 import DataAdapterMixin from 'ember-simple-auth/mixins/data-adapter-mixin';
 
 const { JSONAPIAdapter } = DS;

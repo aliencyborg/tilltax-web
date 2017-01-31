@@ -9,11 +9,9 @@ module.exports = {
     'plugin:ember-suave/recommended'
   ],
   env: {
-    'browser': true
-  },
-  globals: {
+    browser: true
   },
   rules: {
-    'max-len': ['error', 80]
+    'max-len': [1, {"ignoreComments": true}]
   }
 };
