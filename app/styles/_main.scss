@@ -1,4 +1,9 @@
 body {
   background-color: $background-color;
+  color: $primary-color;
   padding: 15px;
+}
+
+.justify {
+  text-align: justify;
 }

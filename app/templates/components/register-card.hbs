@@ -1,58 +1,41 @@
-{{#md-card title="Sign Up for More Info"}}
+{{#md-card title='Connect with a tax preparer:'
+  titleClass='center'}}
   {{#md-card-content}}
-    <div class="row">
+    <div class='row'>
       {{md-input
-        class    = "col s12 m6"
-        errors   = (v-get this "model.firstName" "messages")
-        label    = "First Name"
-        validate = true
-        value    = model.firstName
-      }}
-      {{md-input
-        class    = "col s12 m6"
-        errors   = (v-get this "model.lastName" "messages")
-        label    = "Last Name"
-        validate = true
-        value    = model.lastName
+        label='First Name'
+        value=model.firstName
       }}
     </div>
 
-    <div class="row">
+    <div class='row'>
       {{md-input
-        class    = "col s12"
-        errors   = (v-get this "model.email" "messages")
-        label    = "Email Address"
-        type     = "email"
-        validate = true
-        value    = model.email
+        label='Last Name'
+        value=model.lastName
       }}
     </div>
 
-    <div class="row">
-      <div class="col s8 offset-s1">
-        <h6>What is your Service Type?</h6>
-        {{#md-radios selection=model.serviceType}}
-          <div class="row">
-            <div>
-              <p>{{md-radio value="residential" name="Residential"}}</p>
-              <p>{{md-radio value="commercial" name="Commercial"}}</p>
-            </div>
-          </div>
-        {{/md-radios}}
-      </div>
+    <div class='row'>
+      {{md-input
+        label='Email'
+        type='email'
+        value=model.email
+      }}
     </div>
 
-    {{#md-card-action class="center-align"}}
+    <div class='row'>
+      <h6>What is your filing status?</h6>
+      {{#md-radios selection=model.filingStatus}}
+        <p>{{md-radio value='individual' name='Individual'}}</p>
+        <p>{{md-radio value='self-employed' name='Self-Employed'}}</p>
+        <p>{{md-radio value='corporation' name='Corporation'}}</p>
+      {{/md-radios}}
+    </div>
+
+    {{#md-card-action class='center'}}
       {{md-btn-submit
-        action     = attrs.onsubmit
-        isDisabled = validations.messages.length
-        text       = submitButtonText
-      }}
-
-      {{md-btn-submit
-        action     = attrs.ondetails
-        isDisabled = validations.messages.length
-        text       = detailsButtonText
+        action=attrs.onSubmit
+        text='SUBMIT'
       }}
     {{/md-card-action}}
   {{/md-card-content}}
