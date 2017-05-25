@@ -1,14 +1,14 @@
 {
   "name": "tilltax",
-  "version": "0.0.0",
-  "description": "Small description for tilltax goes here",
+  "version": "0.1.0",
+  "description": "Web client form TillTax",
   "license": "MIT",
-  "author": "",
+  "author": "AlienCyborg LLC",
   "directories": {
     "doc": "doc",
     "test": "tests"
   },
-  "repository": "",
+  "repository": "https://github.com/aliencyborg/tilltax-web",
   "scripts": {
     "build": "ember build",
     "start": "ember server",
