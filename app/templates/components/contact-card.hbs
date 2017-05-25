@@ -1,0 +1,16 @@
+{{#x-card
+  onsubmit=attrs.onsubmit
+  title="Connect with a Tax Preparer"
+  buttonText="Submit"
+  buttonDisabled=validations.messages.length}}
+
+  <div class="row">
+    {{x-input
+      value=model.email
+      errors=(v-get this 'model.email' 'messages')
+      classNames="col s12"
+      type="email"
+      label="Email"}}
+  </div>
+
+{{/x-card}}

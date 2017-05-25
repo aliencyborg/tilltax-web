@@ -1,5 +1,6 @@
 import { moduleForComponent, test } from 'ember-qunit';
 import hbs from 'htmlbars-inline-precompile';
+import textLines from 'tilltax/tests/helpers/text-lines';
 
 moduleForComponent('login-card', 'Integration | Component | login card', {
   integration: true
@@ -12,10 +13,13 @@ test('it renders', function(assert) {
 
   this.render(hbs`{{login-card}}`);
 
-  assert.equal(
-    this.$().text().trim().replace(/[\s\n]+/g, ''),
-    'LogintoTillTaxEmailPassword'
-  );
+  let expectedLines = [
+    "Login to TillTax",
+    "Email",
+    "Password"
+  ];
+
+  assert.deepEqual(textLines(this.$()), expectedLines);
 
   // Template block usage:
   this.render(hbs`
@@ -24,8 +28,5 @@ test('it renders', function(assert) {
     {{/login-card}}
   `);
 
-  assert.equal(
-    this.$().text().trim().replace(/[\s\n]+/g, ''),
-    'LogintoTillTaxEmailPassword'
-  );
+  assert.deepEqual(textLines(this.$()), expectedLines);
 });
