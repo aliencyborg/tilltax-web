@@ -8,5 +8,5 @@ export default Component.extend({
 
   _errorMessages: computed('errors.[]', function() {
     return (this.get('errors') || []).join(', ');
-  });
+  })
 });
