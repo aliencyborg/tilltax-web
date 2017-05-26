@@ -13,4 +13,53 @@
       label="Email"}}
   </div>
 
+  <div class="row">
+    {{x-input
+      value=model.name
+      errors=(v-get this 'model.name' 'messages')
+      classNames="col s12"
+      type="text"
+      label="Legal Name"}}
+  </div>
+
+  <div class="row">
+    {{x-input
+      value=model.phone
+      errors=(v-get this 'model.phone' 'messages')
+      classNames="col s12"
+      type="text"
+      label="Phone Number"}}
+  </div>
+
+  <div class="row">
+    <h4>Filing Status</h4>
+    {{#md-radios
+      selection=model.details.filingStatus
+      optionValuePath='id'
+      optionLabelPath='text'}}
+      <p>{{md-radio value="individual" name="Individual"}}</p>
+      <p>{{md-radio value="business" name="Business"}}</p>
+      <p>{{md-radio value="both" name="Both"}}</p>
+    {{/md-radios}}
+  </div>
+
+  <div class="row">
+    <h4>Filing Year(s)</h4>
+    {{md-checks
+      content=availableYears
+      selection=model.details.filingYears
+      optionValuePath='value'
+      optionLabelPath='value'}}
+  </div>
+
+  <div class="row">
+    {{md-select
+      content=availableRegions
+      value=model.details.filingRegion
+      label="State"
+      prompt="Please choose..."
+      optionLabelPath="content.value"
+      optionValuePath="content.value"}}
+  </div>
+
 {{/x-card}}

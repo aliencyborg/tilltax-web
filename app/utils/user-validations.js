@@ -5,6 +5,28 @@ export const email = [
   validator('format', { type: 'email' })
 ];
 
+export const filingRegion = [
+  validator('presence', true)
+];
+
+export const filingStatus = [
+  validator('presence', true)
+];
+
+export const filingYears = [
+  validator('collection', true),
+  validator('length', {
+    min: 1
+  })
+];
+
+export const name = [
+  validator('presence', true),
+  validator('length', {
+    max: 100
+  })
+];
+
 export const password = [
   validator('presence', true),
   validator('length', {
@@ -22,6 +44,18 @@ export const passwordConfirmation = [
   })
 ];
 
+export const phone = [
+  validator('presence', true),
+  validator('format', { type: 'phone' })
+];
+
 export default {
-  email, password, passwordConfirmation
+  email,
+  filingRegion,
+  filingStatus,
+  filingYears,
+  name,
+  password,
+  passwordConfirmation,
+  phone
 };

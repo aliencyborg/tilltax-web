@@ -1,6 +1,8 @@
 <div class="row">
   <div class="col s12 m8 offset-m2">
     {{contact-card
+      availableRegions=availableRegions
+      availableYears=availableYears
       model=model
       onsubmit=(route-action 'doContact')}}
   </div>

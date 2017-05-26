@@ -15,7 +15,17 @@ test('it renders', function(assert) {
 
   let expectedLines = [
     "Connect with a Tax Preparer",
-    "Email"
+    "Email",
+    "Legal Name",
+    "Phone Number",
+    "Filing Status",
+    "Individual",
+    "Business",
+    "Both",
+    "Filing Year(s)",
+    "State",
+    "▼Please choose...",
+    "Please choose..."
   ];
 
   assert.deepEqual(textLines(this.$()), expectedLines);

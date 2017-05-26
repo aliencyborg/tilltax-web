@@ -1,7 +1,17 @@
 import DS from 'ember-data';
 
-export default DS.Model.extend({
-  email: DS.attr('string'),
-  password: DS.attr('string'),
-  passwordConfirmation: DS.attr('string')
+const { Model, attr } = DS;
+
+export default Model.extend({
+  email: attr(),
+  name: attr(),
+  phone: attr('phone'),
+
+  details: attr('hash', {
+    defaultValue: () => ({
+      filingRegion: '',
+      filingStatus: '',
+      filingYears: []
+    })
+  })
 });
