@@ -4,9 +4,7 @@ const { Route } = Ember;
 
 export default Route.extend({
   model() {
-    let user = this.store.createRecord('user');
-
-    return user;
+    return this.store.createRecord('contact');
   },
 
   setupController(controller/*, model*/) {
@@ -29,7 +27,7 @@ export default Route.extend({
     ];
 
     const availableYears = [
-      { value: 2014 }, { value: 2015 }, { value: 2016 }
+      { value: 2016 }, { value: 2015 }, { value: 2014 }
     ];
 
     controller.setProperties({ availableRegions, availableYears });
@@ -37,7 +35,10 @@ export default Route.extend({
 
   actions: {
     doContact() {
-      alert('contact attempted');
+      this.get('currentModel').save()
+      .then(() => {
+        this.transitionTo('thanks');
+      });
     }
   }
 });

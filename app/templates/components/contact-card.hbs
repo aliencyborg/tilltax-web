@@ -1,6 +1,6 @@
 {{#x-card
   onsubmit=attrs.onsubmit
-  title="Connect with a Tax Preparer"
+  title="Contact Shelly"
   buttonText="Submit"
   buttonDisabled=validations.messages.length}}
 
@@ -32,7 +32,7 @@
   </div>
 
   <div class="row">
-    <h4>Filing Status</h4>
+    <h6>Filing Status</h6>
     {{#md-radios
       selection=model.details.filingStatus
       optionValuePath='id'
@@ -44,7 +44,7 @@
   </div>
 
   <div class="row">
-    <h4>Filing Year(s)</h4>
+    <h6>Filing Year(s)</h6>
     {{md-checks
       content=availableYears
       selection=model.details.filingYears
