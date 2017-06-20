@@ -27,7 +27,7 @@ export default Route.extend({
     ];
 
     const availableYears = [
-      { value: 2016 }, { value: 2015 }, { value: 2014 }
+      { value: "2017" }, { value: "2016" }, { value: "Other" }
     ];
 
     controller.setProperties({ availableRegions, availableYears });

@@ -1,6 +1,6 @@
 {{#x-card
   onsubmit=attrs.onsubmit
-  title="Contact Shelly"
+  title="Contact our team"
   buttonText="Submit"
   buttonDisabled=validations.messages.length}}
 
@@ -37,9 +37,9 @@
       selection=model.details.filingStatus
       optionValuePath='id'
       optionLabelPath='text'}}
-      <p>{{md-radio value="individual" name="Individual"}}</p>
-      <p>{{md-radio value="business" name="Business"}}</p>
-      <p>{{md-radio value="both" name="Both"}}</p>
+      <p>{{md-radio value="Individual" name="Individual"}}</p>
+      <p>{{md-radio value="Business" name="Business"}}</p>
+      <p>{{md-radio value="Individual & Business" name="Both"}}</p>
     {{/md-radios}}
   </div>
 
