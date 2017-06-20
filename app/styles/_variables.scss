@@ -1,23 +1,9 @@
 @import "components/color";
 
-// TillTax Colors
-$thunder          : #352A2E;
-$heavy-metal      : #32372C;
-$mountbatten-pink : #947A84;
-
-$shipyard         : #35AAA6;
-$yellow-orange    : #FF9D4F;
-
-$cold-turkey      : #D0BAB5;
-$spanish-green    : #82968A;
-
-$nutmeg-finish    : #663300;
-$daintree         : #02333F;
-
 // Materialize Overrides
-$primary-color: $thunder;
-// $secondary-color: $shipyard;
+$primary-color: black;
+$secondary-color: color("blue-grey", "darken-4");
 // $link-color: $nutmeg-finish;
 
 // Custom
-$background-color: $mountbatten-pink;
+$background-color: white;
