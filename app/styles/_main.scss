@@ -24,6 +24,12 @@ body {
   margin: 1.5rem 0;
 }
 
+ul.about-list {
+  li {
+    list-style-type: square;
+  }
+}
+
 .contact-card {
   .card-title {
     font-weight: bold;
