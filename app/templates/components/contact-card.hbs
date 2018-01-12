@@ -1,4 +1,5 @@
 {{#x-card
+  classNames='contact-card'
   onsubmit=attrs.onsubmit
   title="Contact our team"
   buttonText="Submit"
@@ -32,7 +33,7 @@
   </div>
 
   <div class="row">
-    <h6>Filing Status</h6>
+    <h6 class='strong'>Filing Status</h6>
     {{#md-radios
       selection=model.details.filingStatus
       optionValuePath='id'
@@ -44,7 +45,7 @@
   </div>
 
   <div class="row">
-    <h6>Filing Year(s)</h6>
+    <h6 class='strong'>Filing Year(s)</h6>
     {{md-checks
       content=availableYears
       selection=model.details.filingYears

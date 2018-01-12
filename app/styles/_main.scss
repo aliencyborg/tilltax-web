@@ -8,12 +8,32 @@ body {
   text-align: center;
 }
 
+.strong {
+  font-weight: bold;
+}
+
 .justify {
   text-align: justify;
 }
 
 .logo {
-  padding: 1rem;
+  margin-top: 1.5rem;
+}
+
+.main-title h1 {
+  margin: 1.5rem 0;
+}
+
+.contact-card {
+  .card-title {
+    font-weight: bold;
+  }
+}
+
+.step-cards {
+  .card-title {
+    font-weight: bold;
+  }
 }
 
 nav {
