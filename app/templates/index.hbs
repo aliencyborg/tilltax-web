@@ -57,11 +57,25 @@
   </div>
 </div>
 
-<div class='center-align'>
-  {{#link-to 'contact'}}
-    {{md-btn text='MEET A PREPARER'
-      buttonType='large'
-      id='contact-button'
-    }}
-  {{/link-to}}
+<div class='row'>
+  <div class='col s12 m4'>
+    <div class='center-align'>
+      <h4>{{link-to 'Privacy Policy' 'privacy'}}</h4>
+    </div>
+  </div>
+  <div class='col s12 m4'>
+    <div class='center-align'>
+      {{#link-to 'contact'}}
+        {{md-btn text='MEET A TAX PREPARER'
+                 buttonType='large'
+                 id='contact-button'
+        }}
+      {{/link-to}}
+    </div>
+  </div>
+  <div class='col s12 m4'>
+    <div class='center-align'>
+      <h4>{{link-to 'Disclaimer' 'disclaimer'}}</h4>
+    </div>
+  </div>
 </div>

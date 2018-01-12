@@ -14,6 +14,8 @@ Router.map(function() {
   this.route('about');
   this.route('contact');
   this.route('thanks');
+  this.route('privacy');
+  this.route('disclaimer');
 });
 
 export default Router;
