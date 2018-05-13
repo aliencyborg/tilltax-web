@@ -14,10 +14,10 @@ test('it renders', function(assert) {
   this.render(hbs`{{tt-footer}}`);
 
   let expectedLines = [
-    '© 2017 Shelly J Till',
+    '© 2018',
     'Till Tax Accounting & Financial Services LLC |',
     '17446 Hiawatha Beach Drive NE, Ham Lake, MN 55304 |',
-    'ShellyJTill@TillTax.com'
+    'Contact@TillTax.com'
   ];
 
   assert.deepEqual(textLines(this.$()), expectedLines);

@@ -18,10 +18,14 @@ test('it renders', function(assert) {
     'Home',
     'Contact',
     'About',
+    'Privacy Policy',
+    'Disclaimer',
     'menu',
     'Home',
     'Contact',
-    'About'
+    'About',
+    'Privacy Policy',
+    'Disclaimer'
   ];
 
   assert.deepEqual(textLines(this.$()), expectedLines);

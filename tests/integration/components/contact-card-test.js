@@ -14,7 +14,7 @@ test('it renders', function(assert) {
   this.render(hbs`{{contact-card}}`);
 
   let expectedLines = [
-    "Contact Shelly",
+    "Contact Our Team",
     "Email",
     "Legal Name",
     "Phone Number",
