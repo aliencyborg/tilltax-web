@@ -1,0 +1,22 @@
+# docker-compose run --rm ember npm install
+# docker-compose up
+
+version: "3"
+
+services:
+  ember:
+    command: "ember server --watcher polling"
+    container_name: tilltax-web
+    image: aliencyborg/ember-cli:stable
+    ports:
+      - "4200:4200"
+      - "7020:7020"
+      - "7357:7357"
+    volumes:
+      - .:/app
+      - tmp:/app/tmp
+      - nodemod:/app/node_modules
+
+volumes:
+  nodemod:
+  tmp:
