@@ -5,6 +5,7 @@ moduleForAcceptance('Acceptance | contact');
 
 test('visiting /contact', function(assert) {
   visit('/contact');
+  percySnapshot('contact page');
 
   andThen(function() {
     assert.equal(currentURL(), '/contact');

@@ -5,6 +5,7 @@ moduleForAcceptance('Acceptance | privacy');
 
 test('visiting /privacy', function(assert) {
   visit('/privacy');
+  percySnapshot('privacy page');
 
   andThen(function() {
     assert.equal(currentURL(), '/privacy');

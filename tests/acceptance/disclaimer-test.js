@@ -5,6 +5,7 @@ moduleForAcceptance('Acceptance | disclaimer');
 
 test('visiting /disclaimer', function(assert) {
   visit('/disclaimer');
+  percySnapshot('disclaimer page');
 
   andThen(function() {
     assert.equal(currentURL(), '/disclaimer');
