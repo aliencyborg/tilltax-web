@@ -1,6 +1,0 @@
-{
-  "name": "tilltax",
-  "dependencies": {
-    "materialize": "^0.98.2"
-  }
-}
